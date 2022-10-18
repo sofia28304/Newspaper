@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: cormorant;
+    src: url(../fonts/CormorantGaramond-Medium.ttf);
+}
+
+@font-face {
+    font-family: cormorantBold;
+    src: url(../fonts/CormorantGaramond-Bold.ttf);
+}
+
+html {
+    font-family: "cormorant";
+    padding: 10px;
+    font-size: 10px;
+}
+
+header h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+header h1 span {
+    font-size: 2em;
+
+}
+
+header div {
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    border-style: double none double none;
+}
+
+/*  main */
+
+.Hauptteil {
+    display: grid;
+    grid-template-columns: 22% 22% auto auto;
+    grid-template-rows: auto auto;
+    /* grid-template-areas: "headerTop headerTop headerTop headerTop sponsorCall"
+        "beiträge beiträge Bild Bild sponsors" "beiträge beiträge Bild Bild sponsors" "beiträge beiträge Bild Bild sponsors"; */
+}
+
+/* rechter Bereich */
+.sponsorCall {
+    grid-column: 5/span 1;
+    font-family: "cormorantBold";
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+}
+
+.sponsors {
+    grid-column: 5/span 1;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 3 auto;
+}
+
+.add {
+    display: flex;
+    font-size: 2.8rem;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    border-style: double;
+    margin: 4px 0 0 0;
+}
+
+.knives {
+    height: 180px;
+    border-style: double;
+    text-align: center;
+    padding: 20px;
+    height: 150px;
+    width: 150px;
+    margin: 4px 0 0 0;
+}
+
+.knives h2 {
+    font-size: 1.5rem;
+}
+
+.knives p span {
+    color: #333;
+    text-decoration: underline;
+}
+
+.ikea {
+    height: 150px;
+    width: 150px;
+    border-style: double;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4px 0 0 0;
+}
+
+.ikea img {
+    width: 130px;
+}
+
+/* rechter Bereich ENDE */
+
+/* linker Bereich */
+.headerTop {
+    grid-column: 1/span 4;
+    font-family: "cormorantBold";
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+}
+
+.beiträge {
+    grid-column: 1/span 2;
+    padding: 10px 0;
+}
+
+.beiträge div {
+    display: flex;
+}
+
+.Bild {
+    grid-column: 3/span 2;
+    padding: 10px 0;
+    margin: 10px;
+}
+
+.kitchen {
+    width: 100%;
+}
+
+.Gruppe {
+    width: 50%;
+    padding: 8px;
+}
+
+.Gruppe h2 {
+    padding: 4px 0;
+    font-family: "cormorantBold";
+}
+
+.Gruppe p {
+    padding-bottom: 7px;
+}
